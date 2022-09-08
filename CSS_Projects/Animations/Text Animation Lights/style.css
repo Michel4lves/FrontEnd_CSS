@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Neonderthaw&family=Noticia+Text&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Neonderthaw', cursive;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #111;
+}
+
+h2 {
+    position: relative;
+    font-size: 6em;
+    color: #222;
+}
+
+.M {
+    color: #D22730;
+    filter: drop-shadow(0 0 20px #D22730) drop-shadow(0 0 50px #D22730);
+}
+
+.i {
+    color: #FFAD00;
+    filter: drop-shadow(0 0 20px #FFAD00) drop-shadow(0 0 50px #FFAD00);
+}
+
+.c {
+    animation: animate1 8s alternate infinite;
+}
+
+@keyframes animate1 {
+    0%, 6% {
+        color: #222;
+        filter: drop-shadow(0 0 0px #E0E722) drop-shadow(0 0 50px #E0E722);
+    }
+    3%, 9%, 100% {
+        color: #E0E722;
+        filter: drop-shadow(0 0 20px #E0E722) drop-shadow(0 0 50px #E0E722);
+    }
+}
+
+.h {
+    color: #44D62C;
+    filter: drop-shadow(0 0 20px #44D62C) drop-shadow(0 0 50px #44D62C);
+}
+
+.e {
+    color: #4D4DFF;
+    filter: drop-shadow(0 0 20px #4D4DFF) drop-shadow(0 0 50px #4D4DFF);
+}
+
+.l {
+    animation: animate2 8s alternate infinite;
+}
+
+@keyframes animate2 {
+    20%, 26%, 32% {
+        color: #222;
+        filter: drop-shadow(0 0 0px #C724B1) drop-shadow(0 0 50px #C724B1);
+    }
+    0%, 10%, 23%, 29%, 40%, 60%, 100% {
+        color: #C724B1;
+        filter: drop-shadow(0 0 20px #C724B1) drop-shadow(0 0 50px #C724B1);
+    }
+}
