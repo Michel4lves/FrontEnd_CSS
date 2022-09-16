@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #2d2e3a;
+}
+
+h1 {
+    position: relative;
+    max-height: 40px;
+    color: #30d9b8;
+    font-weight: normal;
+    display: inline-block;
+    box-shadow: 1px 0 0 #30d9b8;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: textTyping 10s steps(17) infinite;
+}
+
+@keyframes textTyping {
+    0%, 90%, 100% {
+        width: 1px;
+    }
+    30%, 60% {
+        width: 243.02px;
+    }
+}
