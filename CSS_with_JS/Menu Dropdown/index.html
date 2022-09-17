@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Dropdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dropdown" onclick="dropdn()">
+        <input type="text" class="text02" readonly placeholder="Dropdown Menu">
+        <div class="option">
+            <div onmouseover="show('Html')">Html</div>
+            <div onmouseover="show('CSS')">CSS</div>
+            <div onmouseover="show('Javascript')">Javascript</div>
+            <div onmouseover="show('ReactJS')">ReactJS</div>
+            <div onmouseover="show('Angular')">Angular</div>
+        </div>
+    </div>
+    <script>
+        function show(a) {
+            document.querySelector('.text02').value = a
+        }
+
+        let dropdown = document.querySelector('.dropdown')
+        function dropdn() {
+            dropdown.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
