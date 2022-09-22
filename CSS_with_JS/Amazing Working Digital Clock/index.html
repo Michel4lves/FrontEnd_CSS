@@ -40,7 +40,10 @@
             let mm = document.getElementById("mm")
             let ss = document.getElementById("ss")
 
-            let h = new Date().getHours() - 12
+            let h = new Date().getHours()
+            if (h > 12) {
+                let h = new Date().getHours() - 12
+            }
             let m = new Date().getMinutes()
             let s = new Date().getSeconds()
 
