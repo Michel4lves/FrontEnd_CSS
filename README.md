@@ -1,2 +1,2 @@
 # FrontEnd_CSS
-Alguns designs modelos feitos em css.
+Alguns modelos e designs focados em CSS.
