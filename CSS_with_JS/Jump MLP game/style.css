@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f4e0f2;
+}
+
+.game-board {
+    width: 800px;
+    height: 500px;
+    border-bottom: 15px solid #0a662a;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87ceeb, #e0f6ff);
+}
+
+.game-board .clouds {
+    position: absolute;
+    width: 500px;
+    animation: clouds-animation 10s linear infinite;
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -500px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+.game-board .change{
+    position: absolute;
+    bottom: -10px;
+    width: 100px;
+    animation: change-animation 4s linear infinite;
+}
+
+@keyframes change-animation {
+    from {
+        right: -100px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+.game-board .RDash {
+    position: absolute;
+    width: 160px;
+    bottom: -10px;
+}
+
+.jump {
+    animation: jump-animation 2s ease-out;
+}
+
+@keyframes jump-animation {
+    0%, 100% {
+        bottom: 0px;
+    }
+    40%, 50%, 60% {
+        bottom: 200px;
+    }
+}
