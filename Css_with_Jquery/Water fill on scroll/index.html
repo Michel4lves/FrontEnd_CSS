@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watter Fill on Scroll</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <div class="cup">
+        <div class="watter">
+            <div class="wave">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(window).scroll(function(){
+            var scroll = $(window).scrollTop()
+            dh = $(document).height()
+            wh = $(window).height()
+            scrollPercent = (scroll / (dh - wh)) * 100
+            $('.wave').css('top', scrollPercent + '%')
+        })
+    </script>
+</body>
+</html>
