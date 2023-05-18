@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+    background-image: url(city.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.run {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    background-image: url(spritestrip.png);
+    background-size: cover;
+    overflow: hidden;
+    width: calc(1536px / 6);
+    height: 256px;
+    animation: run 0.5s steps(6) infinite, move 3s linear infinite;
+}
+
+@keyframes run{
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: -1536px;
+    }
+}
+
+@keyframes move{
+    0% {
+        transform: translateX(-20vw);
+    }
+    100% {
+        transform: translateX(110vw);
+    }
+}
+
